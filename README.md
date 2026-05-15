@@ -43,7 +43,9 @@ Use:
 
 ### GitHub Pages
 
-Run `npm run build` and publish the `out/` directory with your preferred GitHub Pages workflow. If deploying under a repository subpath, add the required `basePath` and `assetPrefix` in `next.config.ts`.
+Push to `main`. The included GitHub Actions workflow builds the static site and deploys `out/` to GitHub Pages.
+
+In repository settings, set Pages source to **GitHub Actions**.
 
 ## Content Updates
 
