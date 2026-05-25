@@ -7,10 +7,9 @@ Production-ready recruitment agency website built with Next.js, TypeScript, Tail
 - Multi-page recruiting website for employers, recruiters, and hiring teams
 - Pages for Home, About, Services, Employers, Blog, and Contact
 - Frontend forms for contact and employer enquiry
-- Placeholder API routes for future backend integration
 - Metadata API, Open Graph metadata, sitemap, robots, and JSON-LD structured data
 - Responsive mobile-first UI with accessible navigation and form labels
-- Vercel-ready App Router architecture
+- GitHub Pages-compatible static export architecture
 
 ## Tech Stack
 
@@ -37,22 +36,15 @@ Open `http://localhost:3000`.
 npm run build
 ```
 
-## API Placeholders
-
-The following POST routes return JSON success responses and are ready for future integration:
-
-- `/api/contact`
-- `/api/employer-enquiry`
+The static export is generated in `out/`.
 
 ## Deployment
 
-### Vercel
+### GitHub Pages
 
-Import the repository into Vercel and deploy. Vercel will install dependencies and run:
+Push to `main`. The included GitHub Actions workflow builds the static site and deploys `out/` to GitHub Pages.
 
-```bash
-npm run build
-```
+In repository settings, set Pages source to **GitHub Actions**.
 
 ### Environment Variables
 
