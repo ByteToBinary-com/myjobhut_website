@@ -1,13 +1,13 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="630" fill="#F8FAFC"/>
   <rect x="72" y="72" width="1056" height="486" rx="42" fill="#0F172A"/>
-  <circle cx="982" cy="150" r="112" fill="#0F766E"/>
-  <circle cx="1012" cy="486" r="148" fill="#F59E0B" fill-opacity="0.8"/>
-  <rect x="126" y="122" width="72" height="72" rx="20" fill="#0F766E"/>
+  <circle cx="982" cy="150" r="112" fill="#69608F"/>
+  <circle cx="1012" cy="486" r="148" fill="#DED9EA" fill-opacity="0.8"/>
+  <rect x="126" y="122" width="72" height="72" rx="20" fill="#69608F"/>
   <path d="M143 174V142H153L162 154.6L171 142H181V174H171.5V157.6L164.1 167.5H159.9L152.5 157.6V174H143Z" fill="white"/>
   <text x="126" y="272" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">MyJobhut</text>
-  <text x="126" y="348" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500">Recruitment agency, job placement services</text>
+  <text x="126" y="348" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500">Recruitment agency and hiring support</text>
   <text x="126" y="398" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="500">and hiring solutions for growing teams.</text>
-  <rect x="126" y="448" width="286" height="62" rx="31" fill="#0F766E"/>
+  <rect x="126" y="448" width="286" height="62" rx="31" fill="#69608F"/>
   <text x="164" y="489" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Contact MyJobhut</text>
 </svg>

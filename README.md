@@ -1,15 +1,26 @@
-# MyJobhut Website
+# MyJobHut Website
 
-Premium static recruitment website built with Next.js 15, TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
+Production-ready recruitment agency website built with Next.js, TypeScript, Tailwind CSS, App Router, and reusable components.
 
 ## Features
 
-- Static App Router website with `output: "export"`
-- SEO Metadata API, canonical URL, Open Graph, Twitter card, `robots.txt`, and `sitemap.xml`
-- Schema.org structured data for an `EmploymentAgency`
-- Responsive landing page, services, client information, testimonials, and contact sections
-- Frontend-only contact form using `mailto:`, plus `tel:` and WhatsApp deep links
-- Optimized fonts, semantic HTML, accessible navigation, and reduced-motion support
+- Multi-page recruiting website for employers, recruiters, and hiring teams
+- Pages for Home, About, Services, Employers, Blog, and Contact
+- Frontend forms for contact and employer enquiry
+- Placeholder API routes for future backend integration
+- Metadata API, Open Graph metadata, sitemap, robots, and JSON-LD structured data
+- Responsive mobile-first UI with accessible navigation and form labels
+- Vercel-ready App Router architecture
+
+## Tech Stack
+
+- Next.js `16.2.6`
+- TypeScript
+- Tailwind CSS
+- React
+- Lucide React icons
+
+Note: `Next.js 17` is not currently available on npm. This project uses the latest available stable release verified during setup.
 
 ## Local Development
 
@@ -26,26 +37,32 @@ Open `http://localhost:3000`.
 npm run build
 ```
 
-The static export is generated in `out/`.
+## API Placeholders
+
+The following POST routes return JSON success responses and are ready for future integration:
+
+- `/api/contact`
+- `/api/employer-enquiry`
 
 ## Deployment
 
 ### Vercel
 
-Import the repository and deploy. Vercel will run `npm run build`.
+Import the repository into Vercel and deploy. Vercel will install dependencies and run:
 
-### Netlify
+```bash
+npm run build
+```
 
-Use:
+### Environment Variables
 
-- Build command: `npm run build`
-- Publish directory: `out`
+Copy `.env.example` to `.env.local` for local overrides:
 
-### GitHub Pages
-
-Push to `main`. The included GitHub Actions workflow builds the static site and deploys `out/` to GitHub Pages.
-
-In repository settings, set Pages source to **GitHub Actions**.
+```bash
+NEXT_PUBLIC_SITE_URL=https://www.myjobhut.com
+NEXT_PUBLIC_WHATSAPP_NUMBER=919876543210
+NEXT_PUBLIC_CONTACT_EMAIL=contact@myjobhut.com
+```
 
 ## Content Updates
 
@@ -53,7 +70,5 @@ Static content is stored in:
 
 - `data/services.ts`
 - `data/testimonials.ts`
-- `data/clients.ts`
-- `data/seo.ts`
-
-No backend, CMS, database, authentication, or API routes are used.
+- `data/blogs.ts`
+- `data/site.ts`

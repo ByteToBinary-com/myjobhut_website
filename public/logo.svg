@@ -1,6 +1,6 @@
 <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
   <title id="title">MyJobhut logo</title>
-  <rect width="96" height="96" rx="24" fill="#0F766E"/>
+  <rect width="96" height="96" rx="24" fill="#69608F"/>
   <path d="M24 64V30H34.5L48 48.6L61.5 30H72V64H61.6V46.4L50.7 61H45.3L34.4 46.4V64H24Z" fill="white"/>
-  <path d="M30 72H66" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+  <path d="M30 72H66" stroke="#DED9EA" stroke-width="7" stroke-linecap="round"/>
 </svg>

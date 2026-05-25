@@ -1,60 +1,42 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import "./globals.css";
 import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
-import { siteSeo } from "@/data/seo";
-import { businessJsonLd } from "@/lib/schema";
+import { Header } from "@/components/Header";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { siteConfig } from "@/data/site";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/schema";
+import "./globals.css";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0f766e"
+  themeColor: "#69608F"
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteSeo.url),
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: siteSeo.title,
-    template: `%s | ${siteSeo.name}`
+    default: `${siteConfig.name} | Recruitment Agency & Hiring Solutions`,
+    template: `%s | ${siteConfig.name}`
   },
-  description: siteSeo.description,
-  applicationName: siteSeo.name,
-  keywords: siteSeo.keywords,
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: siteSeo.title,
-    description: siteSeo.description,
-    url: siteSeo.url,
-    siteName: siteSeo.name,
-    locale: "en_US",
+    title: `${siteConfig.name} | Recruitment Agency & Employer Hiring Services`,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     type: "website",
-    images: [
-      {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "MyJobhut recruitment and job placement services"
-      }
-    ]
+    images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: `${siteConfig.name} recruitment platform` }]
   },
   twitter: {
     card: "summary_large_image",
-    title: siteSeo.title,
-    description: siteSeo.description,
+    title: `${siteConfig.name} | Recruitment Agency`,
+    description: siteConfig.description,
     images: ["/og-image.svg"]
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1
-    }
   }
 };
 
@@ -62,11 +44,10 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <body>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessJsonLd) }}
-        />
-        <Navbar />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+        <Header />
+        <ScrollReveal />
         {children}
         <Footer />
       </body>

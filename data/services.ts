@@ -1,34 +1,78 @@
-import type { Service } from "@/types/content";
+import {
+  BadgeCheck,
+  BarChart3,
+  BriefcaseBusiness,
+  Building2,
+  CalendarCheck,
+  FileSearch,
+  Handshake,
+  Megaphone,
+  MessagesSquare
+} from "lucide-react";
 
-export const services: Service[] = [
+export const services = [
   {
-    title: "Job Placement",
-    description:
-      "Connect with verified opportunities through a structured placement process built around role fit, career goals, and long-term growth.",
-    icon: "briefcase"
+    title: "Talent Acquisition",
+    description: "Structured sourcing and shortlist support for permanent and priority roles.",
+    icon: BriefcaseBusiness
   },
   {
-    title: "Recruitment Services",
-    description:
-      "End-to-end recruitment agency support for screening, shortlisting, coordination, and closing high-quality candidates faster.",
-    icon: "users"
+    title: "Recruitment Consulting",
+    description: "Hiring strategy, role calibration, interview planning, and market guidance.",
+    icon: MessagesSquare
   },
   {
-    title: "Hiring Support",
-    description:
-      "Responsive hiring support for growing teams that need dependable pipelines, interview alignment, and role-specific talent mapping.",
-    icon: "headset"
+    title: "Hiring Brief Support",
+    description: "Clear role descriptions, role positioning, and distribution-ready hiring content.",
+    icon: Megaphone
   },
   {
-    title: "Employer Solutions",
-    description:
-      "Practical staffing solutions for companies seeking permanent hiring, volume recruitment, and curated candidate outreach.",
-    icon: "building"
+    title: "Candidate Screening",
+    description: "Profile review, availability checks, compensation fit, and first-level evaluation.",
+    icon: FileSearch
+  },
+  {
+    title: "Employer Branding",
+    description: "Candidate-facing role narratives that make opportunities easier to understand.",
+    icon: Building2
+  },
+  {
+    title: "Resume Shortlisting",
+    description: "Fast, criteria-based filtering to help hiring teams focus on relevant profiles.",
+    icon: BadgeCheck
+  },
+  {
+    title: "Interview Coordination",
+    description: "Scheduling support, candidate reminders, feedback loops, and status tracking.",
+    icon: CalendarCheck
+  },
+  {
+    title: "Salary Insights",
+    description: "Practical compensation context to improve offer planning and candidate alignment.",
+    icon: BarChart3
   },
   {
     title: "Career Guidance",
-    description:
-      "Professional career guidance covering resume readiness, interview preparation, opportunity selection, and market positioning.",
-    icon: "compass"
+    description: "Profile, interview, and opportunity guidance for candidates at every career stage.",
+    icon: Handshake
+  }
+];
+
+export const processSteps = [
+  {
+    title: "Understand the requirement",
+    description: "We clarify role outcomes, hiring priorities, salary range, and must-have skills."
+  },
+  {
+    title: "Source and screen",
+    description: "Relevant candidates are identified, reviewed, and checked for interest and fit."
+  },
+  {
+    title: "Coordinate interviews",
+    description: "Interview schedules, updates, and feedback loops are kept clear and timely."
+  },
+  {
+    title: "Support closure",
+    description: "We help with offer alignment, joining coordination, and candidate communication."
   }
 ];

@@ -1,59 +1,37 @@
-import { services } from "@/data/services";
-import { siteSeo } from "@/data/seo";
+import { siteConfig } from "@/data/site";
 
-export const businessJsonLd = {
+export const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "EmploymentAgency",
-  name: siteSeo.name,
-  url: siteSeo.url,
-  logo: `${siteSeo.url}/logo.svg`,
-  image: `${siteSeo.url}/og-image.svg`,
-  description: siteSeo.description,
-  telephone: siteSeo.phone,
-  email: siteSeo.email,
+  name: siteConfig.name,
+  url: siteConfig.url,
+  logo: `${siteConfig.url}/logo.svg`,
+  description: siteConfig.description,
+  email: siteConfig.email,
+  telephone: siteConfig.phone,
   address: {
     "@type": "PostalAddress",
-    streetAddress: siteSeo.address,
+    streetAddress: siteConfig.address,
     addressCountry: "IN"
   },
   areaServed: "India",
-  knowsAbout: [
-    "Recruitment agency",
-    "Job placement services",
-    "Hiring solutions",
-    "Career guidance",
-    "Staffing solutions"
-  ],
-  sameAs: [siteSeo.url],
+  knowsAbout: siteConfig.keywords,
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: siteSeo.phone,
-    email: siteSeo.email,
-    contactType: "customer service",
-    availableLanguage: ["English", "Hindi"]
+    contactType: "customer support",
+    telephone: siteConfig.phone,
+    email: siteConfig.email
   }
 };
 
-export const pageJsonLd = {
+export const websiteJsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  name: siteSeo.title,
-  url: siteSeo.url,
-  description: siteSeo.description,
-  mainEntity: {
-    "@type": "ItemList",
-    itemListElement: services.map((service, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      item: {
-        "@type": "Service",
-        name: service.title,
-        description: service.description,
-        provider: {
-          "@type": "EmploymentAgency",
-          name: siteSeo.name
-        }
-      }
-    }))
+  "@type": "WebSite",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  description: siteConfig.description,
+  publisher: {
+    "@type": "Organization",
+    name: siteConfig.name
   }
 };
