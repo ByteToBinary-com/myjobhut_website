@@ -11,6 +11,17 @@ import { blogs } from "@/data/blogs";
 import { processSteps, services } from "@/data/services";
 import { partnerLogos, stats, testimonials } from "@/data/testimonials";
 
+const industries = [
+  "IT & Software",
+  "BPO & Customer Support",
+  "Healthcare & Pharma",
+  "Retail & E-commerce",
+  "Logistics & Supply Chain",
+  "Banking & Financial Services",
+  "Manufacturing",
+  "Hospitality"
+];
+
 export default function HomePage() {
   return (
     <main>
@@ -18,13 +29,13 @@ export default function HomePage() {
         <div className="section-shell grid min-h-[calc(100vh-64px)] items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div data-reveal="left">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#DED9EA] bg-white px-3 py-1.5 text-sm font-bold text-[#69608F] shadow-sm">
-              <Search size={16} aria-hidden="true" /> Recruitment support for modern hiring
+              <Search size={16} aria-hidden="true" /> Trusted recruitment partner across India
             </div>
             <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Hire qualified talent with a recruitment partner built for focused hiring.
+              Build your team faster with pre-screened, job-ready talent.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              A professional recruitment agency for employers, recruiters, and companies that need clearer shortlists, faster coordination, and dependable hiring support.
+              MyJobHut helps companies hire faster with practical recruitment support, focused shortlisting, and dependable interview coordination.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/employers">Hire Talent <ArrowRight className="ml-2" size={18} /></Button>
@@ -48,11 +59,31 @@ export default function HomePage() {
               <div className="flex gap-3">
                 <CheckCircle2 className="mt-0.5 text-[#69608F]" size={24} aria-hidden="true" />
                 <div>
-                  <p className="font-semibold text-slate-950">Hiring support that stays practical</p>
-                  <p className="mt-1 text-sm leading-6 text-slate-600">Shortlists, hiring brief support, screening, and interview coordination.</p>
+                  <p className="font-semibold text-slate-950">Need staff urgently? Chat with us on WhatsApp.</p>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">Looking for a job? Send your CV now.</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-14">
+        <div className="section-shell grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <SectionHeading
+            align="left"
+            eyebrow="About Company"
+            title="Recruitment expertise built on speed, quality, and trust"
+            description="Founded in 2019, MyJobHut supports hiring across IT, BPO, healthcare, retail, logistics, BFSI, manufacturing, and hospitality. We have successfully closed 500+ positions for employers in Bengaluru, Pune, Mumbai, Hyderabad, Delhi NCR, Chennai, Kolkata, Ahmedabad, and other PAN India locations."
+          />
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <h3 className="text-lg font-semibold text-slate-950">Quick company facts</h3>
+            <ul className="mt-4 space-y-2 text-sm leading-7 text-slate-700">
+              <li>• Started in 2019</li>
+              <li>• 500+ positions closed</li>
+              <li>• PAN India sourcing network</li>
+              <li>• Hiring support for startups, SMEs, and enterprise teams</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -79,15 +110,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white py-20">
+        <div className="section-shell">
+          <SectionHeading eyebrow="Industries We Serve" title="Specialized hiring across major sectors" description="Our recruiters understand role requirements, compliance expectations, and candidate fit across these industries." />
+          <div className="reveal-grid mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {industries.map((industry) => (
+              <div key={industry} data-reveal className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm font-semibold text-slate-800">
+                {industry}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#F0EEF7] py-20">
         <div className="section-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionHeading align="left" eyebrow="Why choose MyJobHut" title="A sharper way to match talent with opportunity" description="We combine recruitment discipline, career support, and employer-focused process design to improve hiring outcomes." />
+          <SectionHeading align="left" eyebrow="Why Choose Us" title="A practical hiring partner for growing teams" description="From urgent closures to bulk hiring, we combine speed, screening quality, and dedicated support." />
           <div className="reveal-grid grid gap-4 sm:grid-cols-2">
-            {["Verified opportunities", "Role-fit shortlisting", "Interview coordination", "Career-focused guidance"].map((item) => (
+            {["Quick turnaround time", "Pre-screened candidates", "Industry-specific hiring", "Affordable recruitment solutions", "Dedicated support", "PAN India sourcing"].map((item) => (
               <div key={item} data-reveal className="rounded-3xl bg-white p-6 shadow-sm">
                 <CheckCircle2 className="text-[#69608F]" size={24} />
                 <h3 className="mt-4 text-lg font-semibold text-slate-950">{item}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">Clear process, practical communication, and support designed around real hiring needs.</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Clear communication, role-fit shortlisting, and accountable coordination from requirement to joining.</p>
               </div>
             ))}
           </div>
@@ -105,21 +149,6 @@ export default function HomePage() {
                 <p className="mt-3 text-sm leading-7 text-slate-600">{step.description}</p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-slate-50 py-20">
-        <div className="section-shell reveal-grid grid gap-6 md:grid-cols-2">
-          <div data-reveal className="rounded-[2rem] bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-slate-950">Recruitment consulting</h2>
-            <p className="mt-3 text-slate-600">Clarify role requirements, hiring priorities, compensation alignment, and screening criteria before sourcing begins.</p>
-            <Button href="/services" className="mt-6">Explore Services</Button>
-          </div>
-          <div data-reveal className="rounded-[2rem] bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-slate-950">Employer benefits</h2>
-            <p className="mt-3 text-slate-600">Hire qualified candidates faster with hiring brief support, screening, salary insights, and recruitment coordination.</p>
-            <Button href="/employers" className="mt-6">Hire Talent</Button>
           </div>
         </div>
       </section>
