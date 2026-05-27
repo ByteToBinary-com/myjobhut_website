@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CTASection } from "@/components/CTASection";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -9,6 +10,24 @@ export const metadata: Metadata = {
 };
 
 const values = ["Trust", "Clarity", "Speed", "Candidate respect", "Employer focus", "Long-term fit"];
+
+const team = [
+  {
+    name: "Amit Verma",
+    role: "Director",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Nisha Kapoor",
+    role: "Recruitment Lead",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Rohit Bansal",
+    role: "Employer Success Manager",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
+  }
+];
 
 export default function AboutPage() {
   return (
@@ -37,13 +56,17 @@ export default function AboutPage() {
       </section>
       <section className="bg-slate-50 py-20">
         <div className="section-shell">
-          <SectionHeading eyebrow="Team" title="Recruitment specialists, career guides, and hiring coordinators" description="Use this section for team profiles, leadership introductions, or consultant highlights as the company grows." />
+          <SectionHeading eyebrow="Team" title="Meet our recruitment leadership and support team" description="Real team photographs and director profile for stronger trust and transparency." />
           <div className="reveal-grid mt-10 grid gap-5 md:grid-cols-3">
-            {["Recruitment Lead", "Employer Success", "Career Advisor"].map((role) => (
-              <div key={role} data-reveal className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-sm">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#DED9EA] text-2xl font-bold text-[#69608F]">{role[0]}</div>
-                <h3 className="mt-5 text-lg font-semibold text-slate-950">{role}</h3>
-                <p className="mt-2 text-sm text-slate-600">Team profile placeholder</p>
+            {team.map((member) => (
+              <div key={member.name} data-reveal className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                <div className="relative h-72 w-full">
+                  <Image src={member.image} alt={`${member.name} - ${member.role}`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                </div>
+                <div className="p-6 text-center">
+                  <h3 className="text-lg font-semibold text-slate-950">{member.name}</h3>
+                  <p className="mt-1 text-sm text-slate-600">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>

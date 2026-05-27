@@ -1,32 +1,32 @@
 export const testimonials = [
   {
-    name: "Priya Sharma",
-    role: "Business Analyst",
-    company: "Northstar Digital",
+    name: "Ritika Jain",
+    role: "HR Head",
+    company: "Vistara Retail Pvt. Ltd.",
     quote:
-      "MyJobHut brought clarity to our hiring conversations and helped us understand the market before opening a critical role."
+      "MyJobHut helped us close store, warehouse, and backend roles quickly. Their pre-screened candidates saved our team a lot of interview time."
   },
   {
-    name: "Rahul Mehta",
-    role: "HR Manager",
-    company: "Apex People Solutions",
+    name: "Sandeep Verma",
+    role: "Candidate (Accounts Executive)",
+    company: "Placed in Pune",
     quote:
-      "The shortlists were relevant and the coordination was dependable. It saved our hiring managers a lot of screening time."
+      "I shared my CV on WhatsApp and received interview calls within days. The team guided me clearly through each step until joining."
   },
   {
-    name: "Ananya Rao",
-    role: "Operations Lead",
-    company: "CoreWorks",
+    name: "Neha Kulkarni",
+    role: "Talent Acquisition Manager",
+    company: "Zenith Healthcare",
     quote:
-      "We needed hiring support for multiple roles, and MyJobHut brought structure to the process from role intake to offer closure."
+      "For urgent hiring, MyJobHut delivered role-fit profiles from healthcare and pharma backgrounds with impressive turnaround time."
   }
 ];
 
 export const stats = [
-  { value: "4,800+", label: "profiles reviewed" },
-  { value: "2,100+", label: "shortlists shared" },
-  { value: "320+", label: "companies served" },
-  { value: "9", label: "service areas" }
+  { value: "500+", label: "Candidates Placed" },
+  { value: "100+", label: "Clients Served" },
+  { value: "Multiple", label: "Industries Covered" },
+  { value: "Fast", label: "Hiring Support" }
 ];
 
 export const partnerLogos = ["Northstar", "Apex", "CoreWorks", "Summit", "UrbanCare", "Metro"];
