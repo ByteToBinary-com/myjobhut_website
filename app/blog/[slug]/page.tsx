@@ -41,7 +41,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           </div>
         </div>
       </article>
-      <CTASection title="Need help with hiring planning?" description="MyJobHut supports employers with practical recruitment guidance and hiring coordination." />
+      <CTASection title="Need help with hiring planning?" description="My Job Hut supports employers with practical recruitment guidance and hiring coordination." />
     </main>
   );
 }

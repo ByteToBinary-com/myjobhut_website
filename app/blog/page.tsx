@@ -5,7 +5,7 @@ import { blogs } from "@/data/blogs";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Read MyJobHut hiring trends, career advice, interview preparation, and resume tips."
+  description: "Read My Job Hut hiring trends, career advice, interview preparation, and resume tips."
 };
 
 export default function BlogPage() {

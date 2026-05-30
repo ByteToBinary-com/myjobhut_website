@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Recruitment Services",
-  description: "Explore MyJobHut recruitment services including talent acquisition, candidate screening, hiring brief support, and employer guidance."
+  description: "Explore My Job Hut recruitment services including talent acquisition, candidate screening, hiring brief support, and employer guidance."
 };
 
 export default function ServicesPage() {
@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Hiring solutions and career support for every stage."
-        description="From talent acquisition to interview coordination and salary insights, MyJobHut supports employers with focused recruitment services."
+        description="From talent acquisition to interview coordination and salary insights, My Job Hut supports employers with focused recruitment services."
         primaryCta={{ label: "Hire Talent", href: "/employers" }}
         secondaryCta={{ label: "Contact Us", href: "/contact" }}
         image="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { navItems, siteConfig } from "@/data/site";
@@ -13,8 +13,13 @@ export function Footer() {
             <span className="text-xl font-extrabold">{siteConfig.name}</span>
           </Link>
           <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">
-            A modern recruitment agency helping employers hire confidently with clear role intake, screening, coordination, and hiring support.
+            A leading recruitment and staffing consultancy established on 8 March 2022, connecting talented professionals with top organizations across India.
           </p>
+          <div className="mt-4 flex flex-wrap gap-3 text-sm text-slate-300">
+            <a href={siteConfig.socialLinks.linkedin} target="_blank" rel="noreferrer" className="focus-ring rounded-md underline transition hover:text-white">LinkedIn</a>
+            <a href={siteConfig.socialLinks.instagram} target="_blank" rel="noreferrer" className="focus-ring rounded-md underline transition hover:text-white">Instagram</a>
+            <a href={siteConfig.socialLinks.facebook} target="_blank" rel="noreferrer" className="focus-ring rounded-md underline transition hover:text-white">Facebook</a>
+          </div>
         </div>
         <div>
           <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-slate-400">Pages</h2>
@@ -32,17 +37,20 @@ export function Footer() {
             <a href={`tel:${siteConfig.phoneHref}`} className="focus-ring flex items-center gap-2 rounded-md transition hover:text-white">
               <Phone size={16} aria-hidden="true" /> {siteConfig.phone}
             </a>
+            <a href={`https://wa.me/${siteConfig.whatsappNumber}`} target="_blank" rel="noreferrer" className="focus-ring flex items-center gap-2 rounded-md transition hover:text-white">
+              <MessageCircle size={16} aria-hidden="true" /> WhatsApp: {siteConfig.phone}
+            </a>
             <a href={`mailto:${siteConfig.email}`} className="focus-ring flex items-center gap-2 rounded-md transition hover:text-white">
               <Mail size={16} aria-hidden="true" /> {siteConfig.email}
             </a>
-            <span className="flex items-center gap-2">
-              <MapPin size={16} aria-hidden="true" /> {siteConfig.address}
+            <span className="flex items-start gap-2">
+              <MapPin size={16} aria-hidden="true" className="mt-1 shrink-0" /> {siteConfig.address}
             </span>
           </div>
         </div>
       </div>
       <div className="border-t border-white/10 py-5">
-        <div className="section-shell text-sm text-slate-400">Copyright {new Date().getFullYear()} MyJobHut. All rights reserved.</div>
+        <div className="section-shell text-sm text-slate-400">Copyright {new Date().getFullYear()} My Job Hut. All rights reserved.</div>
       </div>
     </footer>
   );

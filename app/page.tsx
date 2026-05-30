@@ -9,17 +9,19 @@ import { StatCard } from "@/components/StatCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { blogs } from "@/data/blogs";
 import { processSteps, services } from "@/data/services";
+import { siteConfig } from "@/data/site";
 import { partnerLogos, stats, testimonials } from "@/data/testimonials";
 
 const industries = [
-  "IT & Software",
-  "BPO & Customer Support",
-  "Healthcare & Pharma",
-  "Retail & E-commerce",
-  "Logistics & Supply Chain",
-  "Banking & Financial Services",
+  "Pharmaceutical",
   "Manufacturing",
-  "Hospitality"
+  "Power & Energy",
+  "FMCG",
+  "Steel",
+  "Engineering",
+  "Automotive",
+  "Real Estate",
+  "And many other sectors"
 ];
 
 export default function HomePage() {
@@ -35,7 +37,7 @@ export default function HomePage() {
               Build your team faster with pre-screened, job-ready talent.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              MyJobHut helps companies hire faster with practical recruitment support, focused shortlisting, and dependable interview coordination.
+              My Job Hut connects talented professionals with top organizations across India through reliable recruitment and staffing consultancy services.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button href="/employers">Hire Talent <ArrowRight className="ml-2" size={18} /></Button>
@@ -74,15 +76,15 @@ export default function HomePage() {
             align="left"
             eyebrow="About Company"
             title="Recruitment expertise built on speed, quality, and trust"
-            description="Founded in 2019, MyJobHut supports hiring across IT, BPO, healthcare, retail, logistics, BFSI, manufacturing, and hospitality. We have successfully closed 500+ positions for employers in Bengaluru, Pune, Mumbai, Hyderabad, Delhi NCR, Chennai, Kolkata, Ahmedabad, and other PAN India locations."
+            description="Established on 8 March 2022, My Job Hut specializes in recruitment and staffing across pharmaceutical, manufacturing, power & energy, FMCG, steel, engineering, automotive, real estate, and many other sectors. With 1500+ successful placements and 100+ clients served, we provide trusted Pan India recruitment services for employers and candidates."
           />
           <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
             <h3 className="text-lg font-semibold text-slate-950">Quick company facts</h3>
             <ul className="mt-4 space-y-2 text-sm leading-7 text-slate-700">
-              <li>• Started in 2019</li>
-              <li>• 500+ positions closed</li>
-              <li>• PAN India sourcing network</li>
-              <li>• Hiring support for startups, SMEs, and enterprise teams</li>
+              <li>• Established on {siteConfig.establishedDate}</li>
+              <li>• 1500+ successful placements</li>
+              <li>• 100+ clients served</li>
+              <li>• Pan India recruitment services</li>
             </ul>
           </div>
         </div>
@@ -90,7 +92,7 @@ export default function HomePage() {
 
       <section className="bg-white py-10">
         <div className="section-shell">
-          <p className="text-center text-sm font-bold uppercase tracking-[0.16em] text-slate-500">Trusted companies and hiring partners</p>
+          <p className="text-center text-sm font-bold uppercase tracking-[0.16em] text-slate-500">Trusted by companies across industries</p>
           <div className="reveal-grid mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {partnerLogos.map((logo) => (
               <div key={logo} data-reveal="scale" className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-5 text-center text-sm font-bold text-slate-600">
@@ -112,7 +114,7 @@ export default function HomePage() {
 
       <section className="bg-white py-20">
         <div className="section-shell">
-          <SectionHeading eyebrow="Industries We Serve" title="Specialized hiring across major sectors" description="Our recruiters understand role requirements, compliance expectations, and candidate fit across these industries." />
+          <SectionHeading eyebrow="Industries We Serve" title="Specialized hiring across major sectors" description="Our recruiters support employers and candidates across specialized and high-demand sectors throughout India." />
           <div className="reveal-grid mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {industries.map((industry) => (
               <div key={industry} data-reveal className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm font-semibold text-slate-800">
@@ -125,13 +127,13 @@ export default function HomePage() {
 
       <section className="bg-[#F0EEF7] py-20">
         <div className="section-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionHeading align="left" eyebrow="Why Choose Us" title="A practical hiring partner for growing teams" description="From urgent closures to bulk hiring, we combine speed, screening quality, and dedicated support." />
+          <SectionHeading align="left" eyebrow="Why Choose Us" title="A practical hiring partner for growing teams" description="From urgent closures to specialized hiring, we combine Pan India reach, screening quality, and dedicated support." />
           <div className="reveal-grid grid gap-4 sm:grid-cols-2">
             {["Quick turnaround time", "Pre-screened candidates", "Industry-specific hiring", "Affordable recruitment solutions", "Dedicated support", "PAN India sourcing"].map((item) => (
               <div key={item} data-reveal className="rounded-3xl bg-white p-6 shadow-sm">
                 <CheckCircle2 className="text-[#69608F]" size={24} />
                 <h3 className="mt-4 text-lg font-semibold text-slate-950">{item}</h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">Clear communication, role-fit shortlisting, and accountable coordination from requirement to joining.</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Reliable communication, role-fit shortlisting, and accountable coordination from requirement to joining.</p>
               </div>
             ))}
           </div>
