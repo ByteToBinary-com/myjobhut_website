@@ -7,8 +7,8 @@ export function ContactForm() {
         <TextInput label="Full name" name="name" placeholder="Your name" />
         <TextInput label="Email" name="email" type="email" placeholder="you@example.com" />
       </div>
-      <TextInput label="Phone" name="phone" type="tel" placeholder="+91 98765 43210" />
-      <TextArea label="Message" name="message" placeholder="Tell us how MyJobHut can help." />
+      <TextInput label="Phone" name="phone" type="tel" placeholder="+91 99537 92970" />
+      <TextArea label="Message" name="message" placeholder="Tell us how My Job Hut can help." />
     </FormShell>
   );
 }

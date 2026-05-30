@@ -1,4 +1,4 @@
-# MyJobHut Website
+# My Job Hut Website
 
 Production-ready recruitment agency website built with Next.js, TypeScript, Tailwind CSS, App Router, and reusable components.
 
@@ -52,8 +52,8 @@ Copy `.env.example` to `.env.local` for local overrides:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=https://www.myjobhut.com
-NEXT_PUBLIC_WHATSAPP_NUMBER=919876543210
-NEXT_PUBLIC_CONTACT_EMAIL=contact@myjobhut.com
+NEXT_PUBLIC_WHATSAPP_NUMBER=919953792970
+NEXT_PUBLIC_CONTACT_EMAIL=info@myjobhut.com
 ```
 
 ## Content Updates

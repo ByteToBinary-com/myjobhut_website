@@ -6,7 +6,7 @@ import { processSteps } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Employers",
-  description: "Hire qualified candidates faster with MyJobHut employer hiring services, recruitment consulting, and candidate screening support."
+  description: "Hire qualified candidates faster with My Job Hut employer hiring services, recruitment consulting, and candidate screening support."
 };
 
 export default function EmployersPage() {

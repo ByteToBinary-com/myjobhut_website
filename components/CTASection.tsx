@@ -8,7 +8,7 @@ type CTASectionProps = {
 
 export function CTASection({
   title = "Ready to move your hiring or career search forward?",
-  description = "Talk to MyJobHut for hiring solutions, recruitment consulting, and practical employer support."
+  description = "Talk to My Job Hut for hiring solutions, recruitment consulting, and practical employer support."
 }: CTASectionProps) {
   return (
     <section className="bg-[#69608F] py-16 text-white">
