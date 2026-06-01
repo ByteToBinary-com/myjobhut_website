@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/"
   },
+  icons: {
+    icon: siteConfig.icon,
+    shortcut: siteConfig.icon
+  },
   openGraph: {
     title: `${siteConfig.name} | Recruitment Agency & Employer Hiring Services`,
     description: siteConfig.description,

@@ -1,5 +1,4 @@
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { navItems, siteConfig } from "@/data/site";
 
@@ -9,8 +8,7 @@ export function Footer() {
       <div className="section-shell grid gap-10 py-14 md:grid-cols-[1.2fr_0.8fr_1fr]">
         <div>
           <Link href="/" className="focus-ring inline-flex items-center gap-3 rounded-md">
-            <Image src="/logo.svg" alt="" width={42} height={42} />
-            <span className="text-xl font-extrabold">{siteConfig.name}</span>
+            <img src={siteConfig.logo} alt="" width={190} height={46} className="h-auto w-[190px] shrink-0 rounded bg-white" />
           </Link>
           <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">
             A leading recruitment and staffing consultancy established on 8 March 2022, connecting talented professionals with top organizations across India.

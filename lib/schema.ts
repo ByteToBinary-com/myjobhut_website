@@ -5,7 +5,7 @@ export const organizationJsonLd = {
   "@type": "EmploymentAgency",
   name: siteConfig.name,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/logo.svg`,
+  logo: `${siteConfig.url}${siteConfig.logo}`,
   description: siteConfig.description,
   email: siteConfig.email,
   telephone: siteConfig.phone,
