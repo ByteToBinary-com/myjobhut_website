@@ -1,0 +1,12 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">JobHut icon</title>
+  <rect width="256" height="256" fill="white"/>
+  <path d="M123 12A111 111 0 0 0 12 123H44A79 79 0 0 1 123 44V12Z" fill="#347AB9"/>
+  <path d="M133 12A111 111 0 0 1 244 123H212A79 79 0 0 0 133 44V12Z" fill="#020202"/>
+  <path d="M244 133A111 111 0 0 1 133 244V212A79 79 0 0 0 212 133H244Z" fill="#347AB9"/>
+  <path d="M123 244A111 111 0 0 1 12 133H44A79 79 0 0 0 123 212V244Z" fill="#020202"/>
+  <rect x="12" y="122" width="232" height="14" fill="white"/>
+  <rect x="122" y="12" width="14" height="232" fill="white"/>
+  <path d="M113 50V176C113 183 107 188 99 188C90 188 83 181 83 171H53C53 198 72 220 99 220C126 220 143 202 143 176V50H113Z" fill="#347AB9"/>
+  <path d="M157 62H187V117H217V62H247V220H217V145H187V220H157V62Z" fill="#347AB9"/>
+</svg>

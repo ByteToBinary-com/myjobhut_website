@@ -1,7 +1,6 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -17,8 +16,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/92 backdrop-blur-xl">
       <nav className="section-shell flex h-16 items-center justify-between gap-4" aria-label="Primary navigation">
         <Link href="/" className="focus-ring flex shrink-0 items-center gap-3 rounded-md" aria-label="My Job Hut home">
-          <Image src="/logo.svg" alt="" width={40} height={40} priority />
-          <span className="text-lg font-extrabold tracking-tight text-slate-950">{siteConfig.name}</span>
+          <img src={siteConfig.logo} alt="" width={180} height={43} className="h-11 w-auto max-w-[180px] shrink-0" />
         </Link>
 
         <div className="hidden items-center gap-5 lg:flex">
