@@ -13,7 +13,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/92 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[#DED9EA]/80 bg-[#F2EFF8]/95 backdrop-blur-xl">
       <nav className="section-shell flex h-16 items-center justify-between gap-4" aria-label="Primary navigation">
         <Link href="/" className="focus-ring flex shrink-0 items-center gap-3 rounded-md" aria-label="My Job Hut home">
           <img src={siteConfig.logo} alt="" width={180} height={43} className="h-11 w-auto max-w-[180px] shrink-0" />
@@ -54,7 +54,7 @@ export function Header() {
         </button>
       </nav>
 
-      <div className={cn("border-t border-slate-200 bg-white lg:hidden", open ? "block" : "hidden")}>
+      <div className={cn("border-t border-[#DED9EA]/80 bg-[#F2EFF8] lg:hidden", open ? "block" : "hidden")}>
         <div className="section-shell grid gap-1 py-3">
           {navItems.map((item) => (
             <Link
