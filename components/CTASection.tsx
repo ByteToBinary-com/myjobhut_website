@@ -18,7 +18,7 @@ export function CTASection({
           <p className="mt-4 text-base leading-7 text-[#F0EEF7]">{description}</p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Button href="/contact" variant="secondary">
+          <Button href="/contact" variant="secondary" className="!bg-white !text-[#69608F] hover:!text-[#5A527C]">
             Contact Us <ArrowRight className="ml-2" size={16} />
           </Button>
           <Button href="/employers" className="bg-slate-950 hover:bg-slate-900">
