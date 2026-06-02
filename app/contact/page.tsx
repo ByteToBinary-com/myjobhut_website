@@ -62,12 +62,29 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div data-reveal className="flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-              <MapPin className="text-[#69608F]" size={24} />
-              <span>
-                <span className="block font-semibold text-slate-950">Office Address</span>
-                <span className="mt-1 block text-sm text-slate-600">{siteConfig.address}</span>
-              </span>
+            <div data-reveal className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+              <div className="flex items-center gap-4">
+                <MapPin className="text-[#69608F]" size={24} />
+                <span>
+                  <span className="block font-semibold text-slate-950">Office Address</span>
+                  <span className="mt-1 block text-sm text-slate-600">{siteConfig.address}</span>
+                </span>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.5790552242674!2d77.16631617550334!3d28.702236075626754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03757a618399%3A0x2209bad8df31d761!2sMyjobhut.com%20owned%20by%20Jobhut%20Consultancy%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1780405558722!5m2!1sen!2sin"
+                title="My Job Hut office location on Google Maps"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="mt-4 h-64 w-full rounded-2xl border-0"
+              />
+              <a
+                href="https://maps.app.goo.gl/8sXteMZ8CNr1VbYh9"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block text-sm font-semibold text-[#69608F] underline"
+              >
+                Open in Google Maps
+              </a>
             </div>
             <div data-reveal className="flex items-center gap-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
               <Clock3 className="text-[#69608F]" size={24} />

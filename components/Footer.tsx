@@ -8,7 +8,7 @@ export function Footer() {
       <div className="section-shell grid gap-10 py-14 md:grid-cols-[1.2fr_0.8fr_1fr]">
         <div>
           <Link href="/" className="focus-ring inline-flex items-center gap-3 rounded-md">
-              <img src={siteConfig.logo} alt="" width={42} height={42} className="h-[42px] w-[42px] shrink-0" />
+              <img src={siteConfig.logo} alt="" width={225} height={54} className="h-14 w-auto max-w-[225px] shrink-0" />
           </Link>
           <p className="mt-5 max-w-md text-sm leading-7 text-slate-300">
             A leading recruitment and staffing consultancy established on 8 March 2022, connecting talented professionals with top organizations across India.

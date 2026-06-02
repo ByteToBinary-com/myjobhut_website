@@ -3,8 +3,8 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.myjobhut.com",
   description:
     "My Job Hut is a leading recruitment and staffing consultancy established on 8 March 2022, connecting talented professionals with top organizations across India.",
-  logo: "/myjobhut_website/logo.png",
-  icon: "/myjobhut_website/favicon.ico",
+  logo: "/logo.png",
+  icon: "/favicon.ico",
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "info@myjobhut.com",
   emails: ["info@myjobhut.com", "resume@myjobhut.com"],
   phone: "+91 99537 92970",

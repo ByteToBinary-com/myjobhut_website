@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { siteConfig } from "@/data/site";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/schema";
 import "./globals.css";
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <ScrollReveal />
         {children}
         <Footer />
+        <WhatsAppFloat />
       </body>
     </html>
   );
