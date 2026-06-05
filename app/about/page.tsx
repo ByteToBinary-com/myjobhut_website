@@ -8,7 +8,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about My Job Hut, a recruitment and staffing consultancy established on 8 March 2022 and serving employers and job seekers across India."
+    "Learn about Jobhut Consultancy, a recruitment and staffing consultancy established on 8 March 2022 and serving employers and job seekers across India."
 };
 
 const industries = [
@@ -36,9 +36,9 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        eyebrow="About My Job Hut"
+        eyebrow="About Jobhut Consultancy"
         title="Connecting talented professionals with top organizations across India."
-        description="My Job Hut is a leading recruitment and staffing consultancy established on 8 March 2022, dedicated to helping businesses grow and careers flourish."
+        description="Jobhut Consultancy is a leading recruitment and staffing consultancy established on 8 March 2022, dedicated to helping businesses grow and careers flourish."
         primaryCta={{ label: "Contact Us", href: "/contact" }}
         secondaryCta={{ label: "View Services", href: "/services" }}
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
@@ -52,10 +52,10 @@ export default function AboutPage() {
               align="left"
               eyebrow="Our story"
               title="A recruitment partner built for dependable hiring outcomes"
-              description="Since 8 March 2022, My Job Hut has supported employers and candidates with reliable, efficient, and professional recruitment solutions. We focus on practical role understanding, targeted sourcing, candidate communication, and timely coordination across the hiring journey."
+              description="Since 8 March 2022, Jobhut Consultancy has supported employers and candidates with reliable, efficient, and professional recruitment solutions. We focus on practical role understanding, targeted sourcing, candidate communication, and timely coordination across the hiring journey."
             />
           </div>
-          <div data-reveal="right" className="rounded-3xl bg-[#F0EEF7] p-6">
+          <div data-reveal="right" className="rounded-3xl bg-[#EFF6FF] p-6">
             <h2 className="text-xl font-semibold text-slate-950">Our Mission</h2>
             <p className="mt-3 text-sm leading-7 text-slate-600">
               To bridge the gap between employers and job seekers by providing reliable, efficient, and professional recruitment solutions that help businesses grow and careers flourish.
@@ -74,7 +74,7 @@ export default function AboutPage() {
           <div className="reveal-grid mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((industry) => (
               <div key={industry} data-reveal className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <CheckCircle2 className="text-[#69608F]" size={24} aria-hidden="true" />
+                <CheckCircle2 className="text-[#3673B7]" size={24} aria-hidden="true" />
                 <h3 className="mt-4 text-lg font-semibold text-slate-950">{industry}</h3>
               </div>
             ))}
@@ -88,7 +88,7 @@ export default function AboutPage() {
           <div className="reveal-grid mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {achievements.map((achievement) => (
               <div key={achievement} data-reveal className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <CheckCircle2 className="text-[#69608F]" size={24} aria-hidden="true" />
+                <CheckCircle2 className="text-[#3673B7]" size={24} aria-hidden="true" />
                 <h3 className="mt-4 text-lg font-semibold text-slate-950">{achievement}</h3>
               </div>
             ))}
@@ -98,9 +98,9 @@ export default function AboutPage() {
 
       <section className="bg-slate-50 py-20">
         <div className="section-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <SectionHeading align="left" eyebrow="Company profile" title="Serving employers and candidates across India" description={`From our office at ${siteConfig.address}, My Job Hut delivers Pan India recruitment services and supports job seekers through direct enquiries, candidate registration, and WhatsApp updates.`} />
+          <SectionHeading align="left" eyebrow="Company profile" title="Serving employers and candidates across India" description={`From our office at ${siteConfig.address}, Jobhut Consultancy delivers Pan India recruitment services and supports job seekers through direct enquiries, candidate registration, and WhatsApp updates.`} />
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-slate-950">Connect with My Job Hut</h3>
+            <h3 className="text-lg font-semibold text-slate-950">Connect with Jobhut Consultancy</h3>
             <div className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
               <p><strong>Phone / WhatsApp:</strong> {siteConfig.phoneNumbers.map((phone) => phone.label).join(", ")}</p>
               <p><strong>Email:</strong> {siteConfig.emails.join(", ")}</p>
@@ -125,7 +125,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <CTASection title="Want to work with My Job Hut?" description="Contact us for Pan India recruitment support, staffing consultancy, candidate screening, and hiring coordination." />
+      <CTASection title="Want to work with Jobhut Consultancy?" description="Contact us for Pan India recruitment support, staffing consultancy, candidate screening, and hiring coordination." />
     </main>
   );
 }

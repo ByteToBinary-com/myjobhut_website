@@ -6,7 +6,7 @@ import { processSteps } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Employers",
-  description: "Hire qualified candidates faster with My Job Hut employer hiring services, recruitment consulting, and candidate screening support."
+  description: "Hire qualified candidates faster with Jobhut Consultancy employer hiring services, recruitment consulting, and candidate screening support."
 };
 
 export default function EmployersPage() {
@@ -41,7 +41,7 @@ export default function EmployersPage() {
             <div className="reveal-grid mt-8 grid gap-4">
               {processSteps.map((step, index) => (
                 <div key={step.title} data-reveal className="rounded-3xl bg-white p-5 shadow-sm">
-                  <p className="text-sm font-bold text-[#69608F]">Step {index + 1}</p>
+                  <p className="text-sm font-bold text-[#3673B7]">Step {index + 1}</p>
                   <h3 className="mt-2 font-semibold text-slate-950">{step.title}</h3>
                   <p className="mt-2 text-sm leading-7 text-slate-600">{step.description}</p>
                 </div>

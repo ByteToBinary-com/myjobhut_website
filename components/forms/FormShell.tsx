@@ -33,11 +33,11 @@ export function FormShell({ title, children, successMessage, submitLabel = "Subm
       <div className="mt-6 grid gap-5">{children}</div>
       <button
         type="submit"
-        className="focus-ring mt-6 inline-flex w-full justify-center rounded-full bg-[#69608F] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#69608F]/20 transition hover:-translate-y-0.5 hover:bg-[#5A527C] sm:w-auto"
+        className="focus-ring mt-6 inline-flex w-full justify-center rounded-full bg-[#3673B7] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#3673B7]/20 transition hover:-translate-y-0.5 hover:bg-[#1D4ED8] sm:w-auto"
       >
         {submitLabel}
       </button>
-      <p className="mt-4 min-h-6 text-sm font-medium text-[#69608F]" aria-live="polite">
+      <p className="mt-4 min-h-6 text-sm font-medium text-[#3673B7]" aria-live="polite">
         {status === "success" ? successMessage : ""}
       </p>
     </form>

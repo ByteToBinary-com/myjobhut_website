@@ -30,7 +30,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
     <main>
       <article className="bg-white py-20">
         <div data-reveal className="section-shell max-w-3xl">
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#69608F]">{post.category}</p>
+          <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#3673B7]">{post.category}</p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">{post.title}</h1>
           <p className="mt-4 text-sm text-slate-500">{post.date} · {post.readTime}</p>
           <p className="mt-8 text-xl leading-8 text-slate-700">{post.excerpt}</p>
@@ -41,7 +41,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           </div>
         </div>
       </article>
-      <CTASection title="Need help with hiring planning?" description="My Job Hut supports employers with practical recruitment guidance and hiring coordination." />
+      <CTASection title="Need help with hiring planning?" description="Jobhut Consultancy supports employers with practical recruitment guidance and hiring coordination." />
     </main>
   );
 }

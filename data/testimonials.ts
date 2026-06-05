@@ -4,7 +4,7 @@ export const testimonials = [
     role: "HR Head",
     company: "Vistara Retail Pvt. Ltd.",
     quote:
-      "My Job Hut helped us close store, warehouse, and backend roles quickly. Their pre-screened candidates saved our team a lot of interview time."
+      "Jobhut Consultancy helped us close store, warehouse, and backend roles quickly. Their pre-screened candidates saved our team a lot of interview time."
   },
   {
     name: "Sandeep Verma",
@@ -18,7 +18,7 @@ export const testimonials = [
     role: "Talent Acquisition Manager",
     company: "Zenith Healthcare",
     quote:
-      "For urgent hiring, My Job Hut delivered role-fit profiles from healthcare and pharma backgrounds with impressive turnaround time."
+      "For urgent hiring, Jobhut Consultancy delivered role-fit profiles from healthcare and pharma backgrounds with impressive turnaround time."
   }
 ];
 

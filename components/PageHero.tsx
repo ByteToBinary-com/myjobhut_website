@@ -16,7 +16,7 @@ export function PageHero({ eyebrow, title, description, primaryCta, secondaryCta
     <section className="overflow-hidden bg-slate-50">
       <div className="section-shell grid gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-20">
         <div data-reveal="left">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#69608F]">{eyebrow}</p>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#3673B7]">{eyebrow}</p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">{title}</h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">{description}</p>
           {(primaryCta || secondaryCta) ? (

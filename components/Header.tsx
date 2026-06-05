@@ -11,9 +11,9 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/20 bg-[#705391]/95 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl">
       <nav className="section-shell flex h-16 items-center justify-between gap-4" aria-label="Primary navigation">
-        <Link href="/" className="focus-ring flex shrink-0 items-center gap-3 rounded-md" aria-label="My Job Hut home">
+        <Link href="/" className="focus-ring flex shrink-0 items-center gap-3 rounded-md" aria-label="Jobhut Consultancy home">
           <img src={siteConfig.logo} alt="" width={225} height={54} className="h-14 w-auto max-w-[225px] shrink-0" />
         </Link>
 
@@ -22,7 +22,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="focus-ring rounded-md text-sm font-semibold text-white transition hover:text-white/80"
+              className="focus-ring rounded-md text-sm font-semibold text-slate-700 transition hover:text-[#3673B7]"
             >
               {item.label}
             </Link>
@@ -30,17 +30,17 @@ export function Header() {
         </div>
 
         <div className="hidden shrink-0 items-center gap-2 lg:flex">
-          <Button href="/employers" variant="secondary" className="!border-white/70 !bg-[#F8F6FA] px-4 py-2.5 !text-[#705391] hover:!border-white hover:!text-[#705391]">
+          <Button href="/employers" className="px-4 py-2.5 !text-white">
             Hire Talent
           </Button>
-          <Button href="/contact" className="!bg-[#F8F6FA] px-4 py-2.5 !text-[#705391] hover:!bg-white">
+          <Button href="/contact" className="px-4 py-2.5 !text-white">
             Contact Us
           </Button>
         </div>
 
         <button
           type="button"
-          className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/50 text-white lg:hidden"
+          className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-900 lg:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
@@ -49,23 +49,23 @@ export function Header() {
         </button>
       </nav>
 
-      <div className={cn("border-t border-white/20 bg-[#705391] lg:hidden", open ? "block" : "hidden")}>
+      <div className={cn("border-t border-slate-200 bg-white lg:hidden", open ? "block" : "hidden")}>
         <div className="section-shell grid gap-1 py-3">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="focus-ring rounded-xl px-3 py-3 text-sm font-semibold text-white"
+              className="focus-ring rounded-xl px-3 py-3 text-sm font-semibold text-slate-700 transition hover:text-[#3673B7]"
               onClick={() => setOpen(false)}
             >
               {item.label}
             </Link>
           ))}
           <div className="mt-2 grid grid-cols-2 gap-2">
-            <Button href="/employers" variant="secondary" className="!border-white/70 !bg-[#F8F6FA] py-2.5 !text-[#705391] hover:!border-white hover:!text-[#705391]" >
+            <Button href="/employers" className="py-2.5 !text-white" >
               Hire Talent
             </Button>
-            <Button href="/contact" className="!bg-[#F8F6FA] py-2.5 !text-[#705391] hover:!bg-white">
+            <Button href="/contact" className="py-2.5 !text-white">
               Contact Us
             </Button>
           </div>

@@ -1,4 +1,4 @@
-# My Job Hut Website
+# Jobhut Consultancy Website
 
 Production-ready recruitment agency website built with Next.js, TypeScript, Tailwind CSS, App Router, and reusable components.
 

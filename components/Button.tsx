@@ -11,9 +11,9 @@ type ButtonProps = {
 };
 
 const variants = {
-  primary: "bg-[#69608F] text-white shadow-lg shadow-[#69608F]/20 hover:bg-[#5A527C]",
-  secondary: "border border-slate-200 bg-white text-slate-950 shadow-sm hover:border-[#DED9EA] hover:text-[#69608F]",
-  ghost: "text-slate-700 hover:bg-slate-100 hover:text-[#69608F]"
+  primary: "bg-[#3673B7] text-white shadow-lg shadow-[#3673B7]/20 hover:bg-[#1D4ED8]",
+  secondary: "border border-[#3673B7] bg-[#3673B7] text-white shadow-lg shadow-[#3673B7]/20 hover:border-[#1D4ED8] hover:bg-[#1D4ED8]",
+  ghost: "bg-[#3673B7] text-white shadow-lg shadow-[#3673B7]/20 hover:bg-[#1D4ED8]"
 };
 
 export function Button({ children, href, type = "button", variant = "primary", className }: ButtonProps) {
