@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { CTASection } from "@/components/CTASection";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -40,7 +39,6 @@ export default function ServicesPage() {
           ))}
         </div>
       </section>
-      <CTASection />
     </main>
   );
 }

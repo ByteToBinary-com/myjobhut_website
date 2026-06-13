@@ -2,7 +2,6 @@ import { ArrowRight, CheckCircle2, Search } from "lucide-react";
 import Image from "next/image";
 import { BlogCard } from "@/components/BlogCard";
 import { Button } from "@/components/Button";
-import { CTASection } from "@/components/CTASection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
 import { StatCard } from "@/components/StatCard";
@@ -187,8 +186,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <CTASection />
     </main>
   );
 }

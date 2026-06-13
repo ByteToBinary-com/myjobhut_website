@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
-import { CTASection } from "@/components/CTASection";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/data/site";
@@ -125,7 +124,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <CTASection title="Want to work with Jobhut Consultancy?" description="Contact us for Pan India recruitment support, staffing consultancy, candidate screening, and hiring coordination." />
     </main>
   );
 }
