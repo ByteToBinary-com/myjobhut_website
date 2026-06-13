@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { CTASection } from "@/components/CTASection";
 import { blogs, getBlogBySlug } from "@/data/blogs";
 
 type BlogDetailPageProps = {
@@ -41,7 +40,6 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
           </div>
         </div>
       </article>
-      <CTASection title="Need help with hiring planning?" description="Jobhut Consultancy supports employers with practical recruitment guidance and hiring coordination." />
     </main>
   );
 }
