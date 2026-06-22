@@ -101,7 +101,7 @@ export default function HomePage() {
 
       <section className="bg-white py-14">
         <div className="section-shell">
-          <SectionHeading title="Companies We Have Hired For" />
+          <SectionHeading title="We Have Hired For" />
           <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
             {clientLogos.map((logo) => (
               <div key={logo.src} data-reveal="scale" className="flex h-28 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-5">
