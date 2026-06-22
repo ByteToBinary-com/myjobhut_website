@@ -7,7 +7,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Jobhut Consultancy, a recruitment and staffing consultancy established on 8 March 2022 and serving employers and job seekers across India."
+    "Learn about Jobhut Consultancy, a leading recruitment and staffing solutions provider founded on 8 March 2022 to connect talent with opportunity."
 };
 
 const industries = [
@@ -36,8 +36,8 @@ export default function AboutPage() {
     <main>
       <PageHero
         eyebrow="About Jobhut Consultancy"
-        title="Connecting talented professionals with top organizations across India."
-        description="Jobhut Consultancy is a leading recruitment and staffing consultancy established on 8 March 2022, dedicated to helping businesses grow and careers flourish."
+        title="Connecting Talent with Opportunity"
+        description="Founded on 8 March 2022, Jobhut Consultancy is a leading recruitment and staffing solutions provider dedicated to helping organizations build exceptional teams and professionals achieve their career aspirations."
         primaryCta={{ label: "Contact Us", href: "/contact" }}
         secondaryCta={{ label: "View Services", href: "/services" }}
         image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
@@ -50,14 +50,29 @@ export default function AboutPage() {
             <SectionHeading
               align="left"
               eyebrow="Our story"
-              title="A recruitment partner built for dependable hiring outcomes"
-              description="Since 8 March 2022, Jobhut Consultancy has supported employers and candidates with reliable, efficient, and professional recruitment solutions. We focus on practical role understanding, targeted sourcing, candidate communication, and timely coordination across the hiring journey."
+              title="Connecting Talent with Opportunity"
+              description="Founded on 8 March 2022, Jobhut Consultancy is a leading recruitment and staffing solutions provider dedicated to helping organizations build exceptional teams and professionals achieve their career aspirations."
             />
+            <div className="mt-6 space-y-5 text-base leading-8 text-slate-600">
+              <p>
+                The company was founded by Anshu Sahu, a recruitment professional with over 10 years of experience in talent acquisition and talent hunting across diverse industries. With a deep understanding of workforce dynamics and hiring challenges, he established Jobhut Consultancy with a vision to bridge the gap between exceptional talent and growing organizations.
+              </p>
+              <p>
+                At Jobhut Consultancy, we specialize in identifying, attracting, and placing top talent through customized recruitment and staffing solutions. Our client-centric approach, extensive talent network, and industry expertise enable us to deliver quality hiring outcomes that support business growth and career advancement.
+              </p>
+              <p>
+                We believe that people are the most valuable asset of any organization. By connecting the right talent with the right opportunities, we help businesses succeed and professionals build rewarding careers.
+              </p>
+              <p>
+                Whether you are an employer seeking skilled professionals or a candidate looking for your next career opportunity, Jobhut Consultancy is your trusted partner in growth and success.
+              </p>
+              <p className="font-semibold text-slate-950">Jobhut Consultancy – Connecting Talent, Empowering Growth.</p>
+            </div>
           </div>
           <div data-reveal="right" className="rounded-3xl bg-[#EFF6FF] p-6">
             <h2 className="text-xl font-semibold text-slate-950">Our Mission</h2>
             <p className="mt-3 text-sm leading-7 text-slate-600">
-              To bridge the gap between employers and job seekers by providing reliable, efficient, and professional recruitment solutions that help businesses grow and careers flourish.
+              To bridge the gap between exceptional talent and growing organizations by providing customized recruitment and staffing solutions that help businesses succeed and professionals build rewarding careers.
             </p>
             <h2 className="mt-6 text-xl font-semibold text-slate-950">Locations We Serve</h2>
             <p className="mt-3 text-sm leading-7 text-slate-600">
