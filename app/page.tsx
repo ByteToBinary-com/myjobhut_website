@@ -110,8 +110,8 @@ export default function HomePage() {
       <section className="bg-white py-14">
         <div className="section-shell">
           <SectionHeading title="We Have Hired For" />
-          <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-            {clientLogos.map((logo) => (
+          <div className="reveal-grid mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {clientLogos.slice(0, 6).map((logo) => (
               <div key={logo.src} data-reveal="scale" className="flex h-36 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-4">
                 <img src={logo.src} alt={logo.alt} loading="lazy" className="max-h-24 max-w-full object-contain" />
               </div>
@@ -123,8 +123,8 @@ export default function HomePage() {
       <section className="bg-white py-14">
         <div className="section-shell">
           <SectionHeading title="Our Team" />
-          <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-            {ourTeam.map((member) => (
+          <div className="reveal-grid mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {ourTeam.slice(0, 6).map((member) => (
               <div key={member.src} data-reveal="scale" className="flex flex-col items-stretch justify-start rounded-lg border border-slate-200 bg-slate-50 p-0 text-center overflow-hidden">
                 <img src={member.src} alt={member.alt} loading="lazy" className="w-full h-100 object-cover object-top mb-2" />
                 <div className="px-4 pb-4">
