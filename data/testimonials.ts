@@ -23,9 +23,9 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: "1500+", label: "Successful Placements" },
+  { value: "5000+", label: "Successful Placements" },
   { value: "100+", label: "Clients Served" },
-  { value: "Pan India", label: "Recruitment Services" },
+  { value: "Pan India & Overseas", label: "Recruitment Services" },
   { value: "Multiple", label: "Industries Covered" }
 ];
 

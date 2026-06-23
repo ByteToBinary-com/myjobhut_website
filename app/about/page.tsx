@@ -23,8 +23,8 @@ const industries = [
 ];
 
 const achievements = [
-  "1500+ Successful Placements",
-  "Pan India Recruitment Services",
+  "5000+ Successful Placements",
+  "Pan India & Overseas Recruitment Services",
   "Trusted by companies across various industries",
   "100+ Clients Served"
 ];

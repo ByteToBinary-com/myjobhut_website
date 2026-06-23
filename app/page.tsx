@@ -24,15 +24,22 @@ const industries = [
 ];
 
 const clientLogos = [
-  { src: "/clients/1631359875428.jpg.jpeg", alt: "Client company logo" },
-  { src: "/clients/1747371633150.jpg.jpeg", alt: "Client company logo" },
-  { src: "/clients/jindal_itf_logo.jpg.jpeg", alt: "Jindal ITF logo" },
-  { src: "/clients/unnamed (1).png", alt: "Client company logo" },
-  { src: "/clients/download (1).png", alt: "Client company logo" },
+  { src: "/clients/arjan.jpeg", alt: "Arjan" },
+  { src: "/clients/unien capital advisor.jpeg", alt: "Unien Capital Advisor" },
+  { src: "/clients/jindal_itf_logo.jpg.jpeg", alt: "Jindal ITF" },
+  { src: "/clients/TCI Express.png", alt: "TCI Express" },
+  { src: "/clients/G. D. Goenka School.png", alt: "G. D. Goenka School" },
   { src: "/clients/mothersongroup_logo.jpg.jpeg", alt: "Motherson Group logo" },
-  { src: "/clients/download.png", alt: "Client company logo" }
+  { src: "/clients/C & S Electric.png", alt: "C & S Electric" }
 ];
 
+const ourTeam = [
+  { src: "/team/Anshu Sahu -Founder, Director – Talent Acquisition & Recruitment.jpeg", name: "Anshu Sahu", title: "Founder, Director – Talent Acquisition & Recruitment", alt: "Anshu Sahu" },
+  { src: "/team/Harshita Kotiya-Administrative Assistant.jpeg", name: "Harshita Kotiya", title: "Administrative Assistant", alt: "Harshita Kotiya" },
+  { src: "/team/Kumkum Rajput-Talent Acquisition Executive.jpeg", name: "Kumkum Rajput", title: "Talent Acquisition Executive", alt: "Kumkum Rajput" },
+  { src: "/team/Manisha Singh-Senior Recruitment Consultant.jpeg", name: "Manisha Singh", title: "Senior Recruitment Consultant", alt: "Manisha Singh" },
+  { src: "/team/Mehak sharma-Senior Recruitment Consultant.jpeg", name: "Mehak Sharma", title: "Senior Recruitment Consultant", alt: "Mehak Sharma" }
+];
 export default function HomePage() {
   return (
     <main>
@@ -85,15 +92,15 @@ export default function HomePage() {
             align="left"
             eyebrow="About Company"
             title="Recruitment expertise built on speed, quality, and trust"
-            description="Established on 8 March 2022, Jobhut Consultancy specializes in recruitment and staffing across pharmaceutical, manufacturing, power & energy, FMCG, steel, engineering, automotive, real estate, and many other sectors. With 1500+ successful placements and 100+ clients served, we provide trusted Pan India recruitment services for employers and candidates."
+            description="Established on 8 March 2022, Jobhut Consultancy specializes in recruitment and staffing across pharmaceutical, manufacturing, power & energy, FMCG, steel, engineering, automotive, real estate, and many other sectors. With 5000+ successful placements and 100+ clients served, we provide trusted Pan India & Overseas recruitment services for employers and candidates."
           />
           <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
             <h3 className="text-lg font-semibold text-slate-950">Quick company facts</h3>
             <ul className="mt-4 space-y-2 text-sm leading-7 text-slate-700">
               <li>• Established on {siteConfig.establishedDate}</li>
-              <li>• 1500+ successful placements</li>
+              <li>• 5000+ successful placements</li>
               <li>• 100+ clients served</li>
-              <li>• Pan India recruitment services</li>
+              <li>• Pan India & Overseas recruitment services</li>
             </ul>
           </div>
         </div>
@@ -104,8 +111,25 @@ export default function HomePage() {
           <SectionHeading title="We Have Hired For" />
           <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
             {clientLogos.map((logo) => (
-              <div key={logo.src} data-reveal="scale" className="flex h-28 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-5">
-                <img src={logo.src} alt={logo.alt} loading="lazy" className="max-h-16 max-w-full object-contain" />
+              <div key={logo.src} data-reveal="scale" className="flex h-36 items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <img src={logo.src} alt={logo.alt} loading="lazy" className="max-h-24 max-w-full object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-14">
+        <div className="section-shell">
+          <SectionHeading title="Our Team" />
+          <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {ourTeam.map((member) => (
+              <div key={member.src} data-reveal="scale" className="flex flex-col items-stretch justify-start rounded-lg border border-slate-200 bg-slate-50 p-0 text-center overflow-hidden">
+                <img src={member.src} alt={member.alt} loading="lazy" className="w-full h-100 object-cover object-top mb-2" />
+                <div className="px-4 pb-4">
+                  <p className="text-sm font-semibold text-slate-900">{member.name}</p>
+                  <p className="text-xs text-slate-600">{member.title}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -136,9 +160,9 @@ export default function HomePage() {
 
       <section className="bg-[#EFF6FF] py-20">
         <div className="section-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionHeading align="left" eyebrow="Why Choose Us" title="A practical hiring partner for growing teams" description="From urgent closures to specialized hiring, we combine Pan India reach, screening quality, and dedicated support." />
+          <SectionHeading align="left" eyebrow="Why Choose Us" title="A practical hiring partner for growing teams" description="From urgent closures to specialized hiring, we combine Pan India & Overseas reach, screening quality, and dedicated support." />
           <div className="reveal-grid grid gap-4 sm:grid-cols-2">
-            {["Quick turnaround time", "Pre-screened candidates", "Industry-specific hiring", "Affordable recruitment solutions", "Dedicated support", "PAN India sourcing"].map((item) => (
+            {["Quick turnaround time", "Pre-screened candidates", "Industry-specific hiring", "Affordable recruitment solutions", "Dedicated support", "Pan India & Overseas sourcing"].map((item) => (
               <div key={item} data-reveal className="rounded-3xl bg-white p-6 shadow-sm">
                 <CheckCircle2 className="text-[#3673B7]" size={24} />
                 <h3 className="mt-4 text-lg font-semibold text-slate-950">{item}</h3>
