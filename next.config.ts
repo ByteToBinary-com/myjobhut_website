@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const githubPagesBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (process.env.GITHUB_PAGES === "true" ? "/myjobhut_website" : undefined);
+const githubPagesBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (process.env.GITHUB_PAGES === "true" ? "/" : undefined);
 
 const nextConfig: NextConfig = {
   output: "export",
