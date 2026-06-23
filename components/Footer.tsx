@@ -107,7 +107,6 @@ export function Footer() {
                 <MapPin className="mt-1 shrink-0 text-[#BFDBFE]" size={17} aria-hidden="true" />
                 <span>
                   B-89, Block B, Second Floor, Wazirpur Industrial Area,
-                  <br />
                   Ashok Vihar, Delhi - 110052
                 </span>
               </span>

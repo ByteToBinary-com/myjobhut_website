@@ -38,7 +38,8 @@ const ourTeam = [
   { src: "/team/Harshita Kotiya-Administrative Assistant.jpeg", name: "Harshita Kotiya", title: "Administrative Assistant", alt: "Harshita Kotiya" },
   { src: "/team/Kumkum Rajput-Talent Acquisition Executive.jpeg", name: "Kumkum Rajput", title: "Talent Acquisition Executive", alt: "Kumkum Rajput" },
   { src: "/team/Manisha Singh-Senior Recruitment Consultant.jpeg", name: "Manisha Singh", title: "Senior Recruitment Consultant", alt: "Manisha Singh" },
-  { src: "/team/Mehak sharma-Senior Recruitment Consultant.jpeg", name: "Mehak Sharma", title: "Senior Recruitment Consultant", alt: "Mehak Sharma" }
+  { src: "/team/Mehak sharma-Senior Recruitment Consultant.jpeg", name: "Mehak Sharma", title: "Senior Recruitment Consultant", alt: "Mehak Sharma" },
+  { src: "/team/Reema Gautam-Senior Recruitment Consultant.jpeg", name: "Reema Gautam", title: "Senior Recruitment Consultant", alt: "Reema Gautam" }
 ];
 export default function HomePage() {
   return (
@@ -122,7 +123,7 @@ export default function HomePage() {
       <section className="bg-white py-14">
         <div className="section-shell">
           <SectionHeading title="Our Team" />
-          <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <div className="reveal-grid mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             {ourTeam.map((member) => (
               <div key={member.src} data-reveal="scale" className="flex flex-col items-stretch justify-start rounded-lg border border-slate-200 bg-slate-50 p-0 text-center overflow-hidden">
                 <img src={member.src} alt={member.alt} loading="lazy" className="w-full h-100 object-cover object-top mb-2" />
