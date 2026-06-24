@@ -2,7 +2,17 @@ import { FormShell, SelectInput, TextArea, TextInput } from "@/components/forms/
 
 export function EmployerForm() {
   return (
-    <FormShell title="Employer hiring enquiry" formName="employer-enquiry" submitLabel="Request Hiring Support" successMessage="Thanks. Our hiring team will review your requirement.">
+    <FormShell title="Employer hiring enquiry"
+    formName="employer-enquiry" 
+    submitLabel="Request Hiring Support"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    hiddenFields={{
+      access_key: "2412214d-cd7d-43e7-829c-0a5991ff7cfc",
+      subject: "New Employer Enquiry - Jobhut Consultancy"
+      }}
+    successMessage="Thanks. Our hiring team will review your requirement."
+    >
       <div className="grid gap-5 sm:grid-cols-2">
         <TextInput label="Your name" name="name" />
         <TextInput label="Work email" name="email" type="email" />
