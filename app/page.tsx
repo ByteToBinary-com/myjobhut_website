@@ -36,10 +36,11 @@ const clientLogos = [
 const ourTeam = [
   { src: "/team/Anshu Sahu -Founder, Director – Talent Acquisition & Recruitment.jpeg", name: "Anshu Sahu", title: "Founder, Director – Talent Acquisition & Recruitment", alt: "Anshu Sahu" },
   { src: "/team/Harshita Kotiya-Administrative Assistant.jpeg", name: "Harshita Kotiya", title: "Administrative Assistant", alt: "Harshita Kotiya" },
-  { src: "/team/Kumkum Rajput-Talent Acquisition Executive.jpeg", name: "Kumkum Rajput", title: "Talent Acquisition Executive", alt: "Kumkum Rajput" },
-  { src: "/team/Manisha Singh-Senior Recruitment Consultant.jpeg", name: "Manisha Singh", title: "Senior Recruitment Consultant", alt: "Manisha Singh" },
+  { src: "/team/Reema Gautam-Senior Recruitment Consultant.jpeg", name: "Reema Gautam", title: "Senior Recruitment Consultant", alt: "Reema Gautam" },
   { src: "/team/Mehak sharma-Senior Recruitment Consultant.jpeg", name: "Mehak Sharma", title: "Senior Recruitment Consultant", alt: "Mehak Sharma" },
-  { src: "/team/Reema Gautam-Senior Recruitment Consultant.jpeg", name: "Reema Gautam", title: "Senior Recruitment Consultant", alt: "Reema Gautam" }
+  { src: "/team/Manisha Singh-Senior Recruitment Consultant.jpeg", name: "Manisha Singh", title: "Senior Recruitment Consultant", alt: "Manisha Singh" },
+  { src: "/team/Kumkum Rajput-Talent Acquisition Executive.jpeg", name: "Kumkum Rajput", title: "Talent Acquisition Executive", alt: "Kumkum Rajput" },
+  { src: "/team/Barkha Makhija-Talent Acquisition Executive.jpeg", name: "Barkha Makhija", title: "Talent Acquisition Executive", alt: "Barkha Makhija" }
 ];
 export default function HomePage() {
   return (
@@ -124,15 +125,24 @@ export default function HomePage() {
         <div className="section-shell">
           <SectionHeading title="Our Team" />
           <div className="reveal-grid mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {ourTeam.slice(0, 6).map((member) => (
-              <div key={member.src} data-reveal="scale" className="flex flex-col items-stretch justify-start rounded-lg border border-slate-200 bg-slate-50 p-0 text-center overflow-hidden">
-                <img src={member.src} alt={member.alt} loading="lazy" className="w-full h-100 object-cover object-top mb-2" />
-                <div className="px-4 pb-4">
-                  <p className="text-sm font-semibold text-slate-900">{member.name}</p>
-                  <p className="text-xs text-slate-600">{member.title}</p>
+            {ourTeam.map((member, index) => {
+              const isFirst = index === 0;
+              const isSecond = index === 1;
+
+              return (
+                <div
+                  key={member.src}
+                  data-reveal="scale"
+                  className={`flex flex-col items-stretch justify-start overflow-hidden rounded-lg border border-slate-200 bg-slate-50 p-0 text-center ${isFirst ? "sm:col-span-2 lg:col-start-2 lg:col-span-1" : ""} ${isSecond ? "sm:col-start-2 lg:col-start-1" : ""}`}
+                >
+                  <img src={member.src} alt={member.alt} loading="lazy" className="mb-2 h-100 w-full object-cover object-top" />
+                  <div className="px-4 pb-4">
+                    <p className="text-sm font-semibold text-slate-900">{member.name}</p>
+                    <p className="text-xs text-slate-600">{member.title}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
