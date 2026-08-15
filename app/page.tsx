@@ -36,7 +36,6 @@ const clientLogos = [
 const ourTeam = [
   { src: "/team/Anshu Sahu -Founder, Director – Talent Acquisition & Recruitment.jpeg", name: "Anshu Sahu", title: "Founder, Director – Talent Acquisition & Recruitment", alt: "Anshu Sahu" },
   { src: "/team/Harshita Kotiya-Administrative Assistant.jpeg", name: "Harshita Kotiya", title: "Administrative Assistant", alt: "Harshita Kotiya" },
-  { src: "/team/Reema Gautam-Senior Recruitment Consultant.jpeg", name: "Reema Gautam", title: "Senior Recruitment Consultant", alt: "Reema Gautam" },
   { src: "/team/Mehak sharma-Senior Recruitment Consultant.jpeg", name: "Mehak Sharma", title: "Senior Recruitment Consultant", alt: "Mehak Sharma" },
   { src: "/team/Manisha Singh-Senior Recruitment Consultant.jpeg", name: "Manisha Singh", title: "Senior Recruitment Consultant", alt: "Manisha Singh" },
   { src: "/team/Kumkum Rajput-Talent Acquisition Executive.jpeg", name: "Kumkum Rajput", title: "Talent Acquisition Executive", alt: "Kumkum Rajput" },
