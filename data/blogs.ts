@@ -1,3 +1,11 @@
+import { resumeTipsContent } from "./resume-tips-for-freshers";
+
+export type BlogContentBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "heading"; level: 2 | 3; text: string }
+  | { type: "list"; ordered: boolean; items: string[] }
+  | { type: "table"; caption: string; headers: string[]; rows: string[][] };
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -5,7 +13,7 @@ export type BlogPost = {
   date: string;
   readTime: string;
   category: string;
-  content: string[];
+  content: (string | BlogContentBlock)[];
 };
 
 export const blogs: BlogPost[] = [
@@ -115,16 +123,12 @@ export const blogs: BlogPost[] = [
   },
   {
     slug: "resume-tips-for-freshers",
-    title: "Resume tips for freshers",
-    excerpt: "Simple ways freshers can make resumes clearer, more credible, and easier for recruiters to shortlist.",
+    title: "Resume Tips for Freshers",
+    excerpt: "A practical guide on how freshers can write a strong one-page resume that gets noticed, passes ATS filters, and highlights project proof with clarity.",
     date: "2026-05-02",
-    readTime: "4 min read",
+    readTime: "8 min read",
     category: "Resume",
-    content: [
-      "Freshers should keep resumes concise, achievement-focused, and easy to scan for education, projects, internships, and skills.",
-      "Add measurable project outcomes wherever possible and avoid generic claims that are not supported by examples.",
-      "Tailor your resume for each target role category by moving the most relevant skills and projects closer to the top."
-    ]
+    content: resumeTipsContent
   }
 ];
 
